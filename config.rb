@@ -13,6 +13,10 @@ set :haml, { format: :html5 }
 # Remove .html in the URL
 activate :directory_indexes
 
+# Github Pages project path issues
+activate :relative_assets
+set :relative_links, true
+
 # Configure build environment
 configure :build do
   # If you set the MIDDLEMAN_HTTP_PREFIX environment variable on build,
